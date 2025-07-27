@@ -11,3 +11,5 @@ Route::get('/', function () {
 Route::get('/hello', [HelloController::class, 'index']);
 
 Route::get('/employees', [EmployeeController::class, 'index']);
+Route::get('/employees/create', [EmployeeController::class, 'create']);
+Route::post('/employees', [EmployeeController::class, 'store']);

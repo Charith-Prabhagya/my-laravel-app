@@ -6,6 +6,11 @@
 </head>
 
 <body>
+    <a href="/employees/create">➕ Add New Employee</a><br><br>
+
+    @if (session('success'))
+    <div style="color:green;">{{ session('success') }}</div>
+    @endif
     <h1>Employee List</h1>
     <table border="1" cellpadding="10">
         <thead>
